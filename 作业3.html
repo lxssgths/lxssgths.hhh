@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>作业3</title>
+  </head>
+  <body>
+    <form action="https://www.baidu.com">
+      <div>
+       <h3>联系人信息</h3> 
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              联系人姓名:</td>
+              <td> <input
+                type="text"
+                name="姓名"
+                value=""
+                placeholder="长度不能超过25个字"
+                maxlength="25"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              手机号码:</td>
+              <td> <input
+                type="text"
+                name="手机号"
+                value=""
+                placeholder="11位手机号码"
+                maxlength="11"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              电子邮箱:</td>
+              <td> <input
+                type="text"
+                name="邮箱"
+                value=""
+                placeholder="接收签证相关的邮箱地址"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>收件地址:</td>
+            <td>
+              <select name="省" placeholder="请选择">
+                <option value="北京">北京</option>
+              </select>
+              <select name="市" placeholder="请选择">
+                <option value="北京">北京</option>
+              </select>
+              <select name="区" placeholder="请选择">
+                <option value="北京">北京</option>
+              </select>
+              <div>
+                <textarea cols="20" rows="5" style="resize: none;"></textarea>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>是否需要发票:</td>
+            <td>
+              <label
+                ><input type="radio" name="sf" value="s" checked />是</label
+              >
+              <label><input type="radio" name="sf" value="f" />否</label>
+              <!-- 是否 -->
+              <div>
+                <label> <input type="radio" name="fp" value="个人" checked> 个人发票</label>
+              </div>
+              <div>
+                  <label> <input type="radio" name="fp" value="单位" > 单位发票</label>
+                  <!-- 发票类型 -->
+                </div>                
+              <div>
+                <input type="text" name="发票信息" value=""  placeholder="请输入发票抬头">
+              </div>
+              <div>
+                  <input type="text" name="发票信息" value=""  placeholder="请输入发票收件地址">
+                  <!-- 发票信息 -->
+                </div>
+                <div>
+                  <label></label><input type="radio" name="付费方式" value="" checked>平邮免付</label>
+                </div>
+                <div>
+                    <label></label><input type="radio" name="付费方式" value="">快递到付</label>
+                </div>
+                <!-- 付费方式 -->
+            </td>
+          </tr>
+          <tr>
+              <td>
+                <div>附加说明:</div>
+              </td>
+              <td>
+                <textarea name="" id="" cols="30" rows="5" style="resize: none;"></textarea>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <div>
+       <a href="https://www.baidu.com" ><button >返回</button></a>
+        <input type="submit" name="提交订单" value="提交订单"> 
+      </div>
+    </form>
+  </body>
+</html>
